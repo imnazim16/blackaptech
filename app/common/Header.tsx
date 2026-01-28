@@ -144,7 +144,7 @@ function Header() {
             <div>
               <Link
                 href="/start-your-project"
-                className={`start-btn transition-all duration-300 ${pathname === "/start-your-project" ? "text-gray-50" : ""}`}
+                className={`start-btn transition-all duration-300 ${pathname === "/start-your-project" ? "bg-gray-50 text-gray-900" : ""}`}
               >
                 Start Your Project
               </Link>
