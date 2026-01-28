@@ -36,7 +36,7 @@ function Header() {
                 <Link className={"relative inline-block group"} href="/">
                   Home
                   <span
-                    className={`absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0`}
+                    className={`absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0 ${pathname === "/" ? "scale-1 opacity-0" : ""}`}
                   ></span>
                 </Link>
               </li>
