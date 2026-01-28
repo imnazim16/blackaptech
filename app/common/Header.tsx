@@ -47,7 +47,7 @@ function Header() {
                 >
                   What We Do
                   <span
-                    className={`absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0`}
+                    className={`absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0 ${pathname === "/what-we-do" ? "scale-1 opacity-0" : ""}`}
                   ></span>
                 </Link>
               </li>
@@ -57,7 +57,9 @@ function Header() {
                   href="/projects"
                 >
                   Projects
-                  <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0"></span>
+                  <span
+                    className={`absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0 ${pathname === "/projects" ? "scale-1 opacity-0" : ""}`}
+                  ></span>
                 </Link>
               </li>
               <li>
@@ -66,7 +68,9 @@ function Header() {
                   href="/work-with-us"
                 >
                   Work With Us
-                  <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0"></span>
+                  <span
+                    className={`absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0 ${pathname === "/work-with-us" ? "scale-1 opacity-0" : ""}`}
+                  ></span>
                 </Link>
               </li>
               <li>
@@ -75,7 +79,9 @@ function Header() {
                   href="/about-us"
                 >
                   About
-                  <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0"></span>
+                  <span
+                    className={`absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0 ${pathname === "/about-us" ? "scale-1 opacity-0" : ""}`}
+                  ></span>
                 </Link>
               </li>
               <li>
@@ -84,7 +90,9 @@ function Header() {
                   href="/start-your-project"
                 >
                   Contact
-                  <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0"></span>
+                  <span
+                    className={`absolute left-0 -bottom-1 h-[1px] w-full bg-gray-50 transition-all duration-300 group-hover:scale-1 group-hover:opacity-0 ${pathname === "/start-your-project" ? "scale-1 opacity-0" : ""}`}
+                  ></span>
                 </Link>
               </li>
             </ul>
@@ -136,7 +144,7 @@ function Header() {
             <div>
               <Link
                 href="/start-your-project"
-                className="start-btn transition-all duration-300 hover:"
+                className="start-btn transition-all duration-300"
               >
                 Start Your Project
               </Link>
