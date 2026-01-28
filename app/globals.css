@@ -35,7 +35,10 @@ h1, h2, h3, h4, h5, h6 {font-family: var(--font-sans);}
   font-weight: 700;
 }
 .start-btn{
-  @apply text-white px-6 py-3 rounded-4xl text-[18px] bg-gray-700 hover:bg-gray-50 hover:text-gray-900
+  @apply text-white px-6 py-3 rounded-4xl text-[18px] bg-gray-700 transition-all duration-300 hover:bg-gray-50 hover:text-gray-900
+}
+.start-btn.activeBtn{
+  @apply bg-gray-50 text-gray-900
 }
 .nav{
   font-family: var(--font-sans);
